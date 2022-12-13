@@ -24,3 +24,19 @@ a {
     background: black;
   }
 }
+
+
+//**COLORS **/
+:root {
+  --primary-color: #B0B8FB;
+  --primary-color-100: #D8DCFD;
+  --primary-color-200: #D3D1F3;
+  --primary-color-300: #C3BCE7;
+  --white: #ffffff;
+  --white-100: #F6F7FF;
+  --white-200: #F0F3FF;
+  --white-200: #E9ECF5;
+  --white-200: #E2E4EB;
+  --black: #050517;
+
+}
