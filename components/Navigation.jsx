@@ -1,45 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
 
-const Nav = styled.div`
-padding: 1.75rem 1rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-p{
-    margin: 0;
-    font-size: 1.25rem;
-}
-
-`
-
-const NavLink = styled.a`
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: block;
-    text-decoration: none;
-    tranbsition: color 0.15s ease-in-out;
-    color: black;
-
-    &:hover {
-        color: red;
-    }
-
-    &.active {
-        text-decoration: underline;
-    }
-`
 export default function Navigation() {
   return (
-    <Nav>
-        <p>Bryanna Gardner</p>
+    <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4"> Bryanna Gardner</span>
+      </a>
 
-        <div className="d-flex">
-            <NavLink href="#" className="active">About</NavLink>
-            <NavLink href="#">Work</NavLink>
-            <NavLink href="#">Contact</NavLink>
-        </div>
-    </Nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+
   )
 }
